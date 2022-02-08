@@ -14,8 +14,17 @@ api.use(express.static(path.join(__dirname, 'public')))
 
 
 api.get('/', (req, res) =>{
-    res.send('starting serving')
+    res.render('main', {
+
+    })
 })
+
+api.get('/incricao', (req, res) => {
+   res.render('inscricao', {
+       
+   })
+})
+
 
 
 api.listen(port, ()=> console.log('listing here now'))
