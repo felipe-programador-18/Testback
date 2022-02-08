@@ -31,11 +31,13 @@ api.get('/inscricao', (req, res) => {
         nome: inscricao.change(nome),
         email: inscricao.change(email),
         numero:inscricao.change(numero),
-        union: inscricao.change(union) 
+        union: inscricao.change(union),
+        ponto : [1]
     })
 } else{
    res.render('inscricao', {
-    error:'Parabens vc ganhou um ponto'
+    error:('parabens vc ganhou mais um ponto ao compartilhar o link ')
+    
    })
 }
 })
