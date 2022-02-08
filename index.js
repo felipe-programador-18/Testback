@@ -35,10 +35,12 @@ api.get('/inscricao', (req, res) => {
     })
 } else{
    res.render('inscricao', {
-    error:'Valores invalidos, por favor prencha os campos corretamente'
+    error:'Parabens vc ganhou um ponto'
    })
 }
 })
+
+
 
 
 
